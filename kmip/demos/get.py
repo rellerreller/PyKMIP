@@ -63,7 +63,7 @@ if __name__ == '__main__':
     result = client.get(uuid=uuid, credential=credential)
     client.close()
 
-    logger.debug('get() result status: {0}'.format(result.result_status.enum))
-    logger.debug('retrieved object type: {0}'.format(result.object_type.enum))
-    logger.debug('retrieved UUID: {0}'.format(result.uuid.value))
-    logger.debug('retrieved secret: {0}'.format(result.secret))
+    logger.info('get() result status: {0}'.format(result.result_status.enum))
+    logger.info('retrieved object type: {0}'.format(result.object_type.enum))
+    logger.info('retrieved UUID: {0}'.format(result.uuid.value))
+    logger.info('retrieved secret: {0}'.format(result.secret))
